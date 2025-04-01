@@ -89,7 +89,7 @@
                     try {
                        
                         if (data === "") {
-                            alert('No links are marked as visited.');
+                            alert('No data provided to exclude.');
                             return;
                         }
 
@@ -127,7 +127,7 @@
                             })
                         });
                         if (updateResponse.ok) {
-                            alert('Visited links updated successfully!');
+                            alert('Excluded company updated successfully!');
                         } else {
                             alert('Failed to update visited links on GitHub.');
                         }
@@ -140,11 +140,11 @@
         </head>
         <body>
             <h1>Latest Remote Jobs: .NET</h1>
-            <button onclick="updateVisitedLinks()">Update Visited Links</button>
-            // Add a input box and a button to header and it should alert the value of the input box
-            //create a function to create the alert after button click
+            <button onclick="updateVisitedLinks()">Update Visited Links</bu
+            <br>
             <input type="text" id="search" placeholder="">
-            <button onclick="exclude(document.getElementById('search').value)">Search</button>
+            <button onclick="exclude(document.getElementById('search').value)">Exclude</button>
+            <br>
             <table>
                 <tr>
                     <th>S.No</th>
@@ -158,7 +158,7 @@
         
                 <tr>
                 <td>1</td>
-                <td>Tue, 01 Apr 2025 11:15:01 -0000</td>
+                <td>Tue, 01 Apr 2025 14:03:04 -0000</td>
                 <td>.Net Engineer</td>
                 <td>Be among the first 25 applicants</td>
                 <td>Remote</td>
@@ -168,7 +168,7 @@
             
                 <tr>
                 <td>2</td>
-                <td>Tue, 01 Apr 2025 09:45:01 -0000</td>
+                <td>Tue, 01 Apr 2025 11:48:04 -0000</td>
                 <td>.NET Developer</td>
                 <td>Be among the first 25 applicants</td>
                 <td>Remote</td>
@@ -178,7 +178,7 @@
             
                 <tr>
                 <td>3</td>
-                <td>Tue, 01 Apr 2025 07:15:01 -0000</td>
+                <td>Tue, 01 Apr 2025 11:18:04 -0000</td>
                 <td>Sr .Net Developer with Microservices Architecture (12+ year's profile only)</td>
                 <td>Be among the first 25 applicants</td>
                 <td>Remote</td>
@@ -188,7 +188,7 @@
             
                 <tr>
                 <td>4</td>
-                <td>Tue, 01 Apr 2025 07:00:01 -0000</td>
+                <td>Tue, 01 Apr 2025 10:18:04 -0000</td>
                 <td>Fully Remote - Immediate interviews for .Net developer with Angular 9+ experience - long term contract</td>
                 <td>Be among the first 25 applicants</td>
                 <td>Remote</td>
@@ -198,29 +198,29 @@
             
                 <tr>
                 <td>5</td>
-                <td>Tue, 01 Apr 2025 12:47:59 -0000</td>
-                <td>Sr .Net Developer</td>
-                <td>68 applicants</td>
-                <td>Remote</td>
-                <td>American Business Solutions Inc. hiring Sr .Net Developer in Columbus, OH | LinkedIn</td>
-                <td><a href="https://www.linkedin.com/jobs/view/sr-net-developer-at-american-business-solutions-inc-4195241402" target="_blank" onclick="this.style.color='gray'; this.innerText='Visited';">URL</a></td>
-                </tr>
-            
-                <tr>
-                <td>6</td>
-                <td>Tue, 01 Apr 2025 10:02:59 -0000</td>
+                <td>Tue, 01 Apr 2025 10:55:08 -0000</td>
                 <td>Senior Backend Dot Net Developer -6-12 Months Contract-Remote opportunity-Direct Customer</td>
-                <td>90 applicants</td>
+                <td>92 applicants</td>
                 <td>Remote</td>
                 <td>Jobs via Dice hiring Senior Backend Dot Net Developer -6-12 Months Contract-Remote opportunity-Direct Customer in United States | LinkedIn</td>
                 <td><a href="https://www.linkedin.com/jobs/view/senior-backend-dot-net-developer-6-12-months-contract-remote-opportunity-direct-customer-at-jobs-via-dice-4193248751" target="_blank" onclick="this.style.color='gray'; this.innerText='Visited';">URL</a></td>
                 </tr>
             
                 <tr>
+                <td>6</td>
+                <td>Tue, 01 Apr 2025 14:40:08 -0000</td>
+                <td>Sr .Net Developer</td>
+                <td>105 applicants</td>
+                <td>Remote</td>
+                <td>American Business Solutions Inc. hiring Sr .Net Developer in Columbus, OH | LinkedIn</td>
+                <td><a href="https://www.linkedin.com/jobs/view/sr-net-developer-at-american-business-solutions-inc-4195241402" target="_blank" onclick="this.style.color='gray'; this.innerText='Visited';">URL</a></td>
+                </tr>
+            
+                <tr>
                 <td>7</td>
-                <td>Tue, 01 Apr 2025 17:17:59 -0000</td>
+                <td>Tue, 01 Apr 2025 17:25:08 -0000</td>
                 <td>Lead Dotnet Developer</td>
-                <td>109 applicants</td>
+                <td>124 applicants</td>
                 <td>Remote</td>
                 <td>Hatched Recruitment Group hiring Lead Dotnet Developer in United States | LinkedIn</td>
                 <td><a href="https://www.linkedin.com/jobs/view/lead-dotnet-developer-at-hatched-recruitment-group-4198265558" target="_blank" onclick="this.style.color='gray'; this.innerText='Visited';">URL</a></td>
@@ -228,27 +228,17 @@
             
                 <tr>
                 <td>8</td>
-                <td>Tue, 01 Apr 2025 19:17:59 -0000</td>
-                <td>.NET Developer III</td>
-                <td>123 applicants</td>
-                <td>Remote</td>
-                <td>Genesis10 hiring .NET Developer III in Eagan, MN | LinkedIn</td>
-                <td><a href="https://www.linkedin.com/jobs/view/net-developer-iii-at-genesis10-4198271527" target="_blank" onclick="this.style.color='gray'; this.innerText='Visited';">URL</a></td>
-                </tr>
-            
-                <tr>
-                <td>9</td>
-                <td>Tue, 01 Apr 2025 16:17:59 -0000</td>
+                <td>Tue, 01 Apr 2025 16:25:08 -0000</td>
                 <td>Senior Full Stack Engineer</td>
-                <td>131 applicants</td>
+                <td>132 applicants</td>
                 <td>Remote</td>
                 <td>DH ACCOUNTING SERVICES LTD hiring Senior Full Stack Engineer in United States | LinkedIn</td>
                 <td><a href="https://www.linkedin.com/jobs/view/senior-full-stack-engineer-at-dh-accounting-services-ltd-4197498260" target="_blank" onclick="this.style.color='gray'; this.innerText='Visited';">URL</a></td>
                 </tr>
             
                 <tr>
-                <td>10</td>
-                <td>Tue, 01 Apr 2025 13:50:38 -0000</td>
+                <td>9</td>
+                <td>Tue, 01 Apr 2025 14:26:27 -0000</td>
                 <td>Sr Staff Engineer - .NET  (C#/Software Development/Microservices) - REMOTE</td>
                 <td>139 applicants</td>
                 <td>Remote</td>
@@ -257,8 +247,18 @@
                 </tr>
             
                 <tr>
+                <td>10</td>
+                <td>Tue, 01 Apr 2025 19:25:08 -0000</td>
+                <td>.NET Developer III</td>
+                <td>143 applicants</td>
+                <td>Remote</td>
+                <td>Genesis10 hiring .NET Developer III in Eagan, MN | LinkedIn</td>
+                <td><a href="https://www.linkedin.com/jobs/view/net-developer-iii-at-genesis10-4198271527" target="_blank" onclick="this.style.color='gray'; this.innerText='Visited';">URL</a></td>
+                </tr>
+            
+                <tr>
                 <td>11</td>
-                <td>Tue, 01 Apr 2025 07:50:38 -0000</td>
+                <td>Tue, 01 Apr 2025 08:11:27 -0000</td>
                 <td>Software Engineer (.NET &amp; React)</td>
                 <td>165 applicants</td>
                 <td>Remote</td>
@@ -268,9 +268,9 @@
             
                 <tr>
                 <td>12</td>
-                <td>Tue, 01 Apr 2025 08:35:38 -0000</td>
+                <td>Tue, 01 Apr 2025 08:41:27 -0000</td>
                 <td>Senior Software Engineer (C# .NET, Accounting)</td>
-                <td>167 applicants</td>
+                <td>168 applicants</td>
                 <td>Remote</td>
                 <td>Applied Systems hiring Senior Software Engineer (C# .NET, Accounting) in United States | LinkedIn</td>
                 <td><a href="https://www.linkedin.com/jobs/view/senior-software-engineer-c%23-net-accounting-at-applied-systems-4191502064" target="_blank" onclick="this.style.color='gray'; this.innerText='Visited';">URL</a></td>
@@ -278,9 +278,9 @@
             
                 <tr>
                 <td>13</td>
-                <td>Tue, 01 Apr 2025 08:00:01 -0000</td>
+                <td>Tue, 01 Apr 2025 11:03:04 -0000</td>
                 <td>(Remote) Mid-Level Full Stack Developer With React.js</td>
-                <td>167 applicants</td>
+                <td>174 applicants</td>
                 <td>Remote</td>
                 <td>Rider Solution hiring (Remote) Mid-Level Full Stack Developer With React.js in United States | LinkedIn</td>
                 <td><a href="https://www.linkedin.com/jobs/view/remote-mid-level-full-stack-developer-with-react-js-at-rider-solution-4198244008" target="_blank" onclick="this.style.color='gray'; this.innerText='Visited';">URL</a></td>
@@ -288,9 +288,9 @@
             
                 <tr>
                 <td>14</td>
-                <td>Tue, 01 Apr 2025 13:02:59 -0000</td>
+                <td>Tue, 01 Apr 2025 13:25:08 -0000</td>
                 <td>Full Stack Web Developer – Healthcare Technology (Remote) JN -032025-157128</td>
-                <td>173 applicants</td>
+                <td>176 applicants</td>
                 <td>Remote</td>
                 <td>Goodwin Recruiting hiring Full Stack Web Developer – Healthcare Technology (Remote) JN -032025-157128 in Atherton, CA | LinkedIn</td>
                 <td><a href="https://www.linkedin.com/jobs/view/full-stack-web-developer-%E2%80%93-healthcare-technology-remote-jn-032025-157128-at-goodwin-recruiting-4193700992" target="_blank" onclick="this.style.color='gray'; this.innerText='Visited';">URL</a></td>
@@ -298,7 +298,7 @@
             
                 <tr>
                 <td>15</td>
-                <td>Tue, 01 Apr 2025 12:35:38 -0000</td>
+                <td>Tue, 01 Apr 2025 12:41:27 -0000</td>
                 <td>Senior .Net Software Developer/Architect (ID:46569)</td>
                 <td>194 applicants</td>
                 <td>Remote</td>
@@ -308,27 +308,7 @@
             
                 <tr>
                 <td>16</td>
-                <td>Tue, 01 Apr 2025 19:02:59 -0000</td>
-                <td>Senior Software Engineer (C# and .NET)</td>
-                <td>197 applicants</td>
-                <td>Remote</td>
-                <td>Emergent Software hiring Senior Software Engineer (C# and .NET) in United States | LinkedIn</td>
-                <td><a href="https://www.linkedin.com/jobs/view/senior-software-engineer-c%23-and-net-at-emergent-software-4185039213" target="_blank" onclick="this.style.color='gray'; this.innerText='Visited';">URL</a></td>
-                </tr>
-            
-                <tr>
-                <td>17</td>
-                <td>Tue, 01 Apr 2025 06:32:59 -0000</td>
-                <td>Senior Backend Developer</td>
-                <td>199 applicants</td>
-                <td>Remote</td>
-                <td>ProScore Technologies hiring Senior Backend Developer in Greater Houston | LinkedIn</td>
-                <td><a href="https://www.linkedin.com/jobs/view/senior-backend-developer-at-proscore-technologies-4190515226" target="_blank" onclick="this.style.color='gray'; this.innerText='Visited';">URL</a></td>
-                </tr>
-            
-                <tr>
-                <td>18</td>
-                <td>Tue, 01 Apr 2025 20:17:59 -0000</td>
+                <td>Tue, 01 Apr 2025 20:25:08 -0000</td>
                 <td>Senior .Net Engineer</td>
                 <td>Over 200 applicants</td>
                 <td>Remote</td>
@@ -337,8 +317,8 @@
                 </tr>
             
                 <tr>
-                <td>19</td>
-                <td>Tue, 01 Apr 2025 20:02:59 -0000</td>
+                <td>17</td>
+                <td>Tue, 01 Apr 2025 20:10:08 -0000</td>
                 <td>Sr. NET Developer</td>
                 <td>Over 200 applicants</td>
                 <td>Remote</td>
@@ -347,8 +327,8 @@
                 </tr>
             
                 <tr>
-                <td>20</td>
-                <td>Tue, 01 Apr 2025 19:47:59 -0000</td>
+                <td>18</td>
+                <td>Tue, 01 Apr 2025 19:55:08 -0000</td>
                 <td>Senior .NET Engineer</td>
                 <td>Over 200 applicants</td>
                 <td>Remote</td>
@@ -357,8 +337,8 @@
                 </tr>
             
                 <tr>
-                <td>21</td>
-                <td>Tue, 01 Apr 2025 19:32:59 -0000</td>
+                <td>19</td>
+                <td>Tue, 01 Apr 2025 19:40:08 -0000</td>
                 <td>Senior Dotnet Developer</td>
                 <td>Over 200 applicants</td>
                 <td>Remote</td>
@@ -367,8 +347,18 @@
                 </tr>
             
                 <tr>
-                <td>22</td>
-                <td>Tue, 01 Apr 2025 18:47:59 -0000</td>
+                <td>20</td>
+                <td>Tue, 01 Apr 2025 19:10:08 -0000</td>
+                <td>Senior Software Engineer (C# and .NET)</td>
+                <td>Over 200 applicants</td>
+                <td>Remote</td>
+                <td>Emergent Software hiring Senior Software Engineer (C# and .NET) in United States | LinkedIn</td>
+                <td><a href="https://www.linkedin.com/jobs/view/senior-software-engineer-c%23-and-net-at-emergent-software-4185039213" target="_blank" onclick="this.style.color='gray'; this.innerText='Visited';">URL</a></td>
+                </tr>
+            
+                <tr>
+                <td>21</td>
+                <td>Tue, 01 Apr 2025 18:55:08 -0000</td>
                 <td>Lead .NET Developer</td>
                 <td>Over 200 applicants</td>
                 <td>Remote</td>
@@ -377,8 +367,8 @@
                 </tr>
             
                 <tr>
-                <td>23</td>
-                <td>Tue, 01 Apr 2025 18:32:59 -0000</td>
+                <td>22</td>
+                <td>Tue, 01 Apr 2025 18:40:08 -0000</td>
                 <td>.NET Web API Developer</td>
                 <td>Over 200 applicants</td>
                 <td>Remote</td>
@@ -387,8 +377,8 @@
                 </tr>
             
                 <tr>
-                <td>24</td>
-                <td>Tue, 01 Apr 2025 18:17:59 -0000</td>
+                <td>23</td>
+                <td>Tue, 01 Apr 2025 18:25:08 -0000</td>
                 <td>.Net Developer</td>
                 <td>Over 200 applicants</td>
                 <td>Remote</td>
@@ -397,8 +387,8 @@
                 </tr>
             
                 <tr>
-                <td>25</td>
-                <td>Tue, 01 Apr 2025 18:02:59 -0000</td>
+                <td>24</td>
+                <td>Tue, 01 Apr 2025 18:10:08 -0000</td>
                 <td>Lead Dotnet Developer</td>
                 <td>Over 200 applicants</td>
                 <td>Remote</td>
@@ -407,8 +397,8 @@
                 </tr>
             
                 <tr>
-                <td>26</td>
-                <td>Tue, 01 Apr 2025 17:47:59 -0000</td>
+                <td>25</td>
+                <td>Tue, 01 Apr 2025 17:55:08 -0000</td>
                 <td>.NET Software Engineer</td>
                 <td>Over 200 applicants</td>
                 <td>Remote</td>
@@ -417,8 +407,8 @@
                 </tr>
             
                 <tr>
-                <td>27</td>
-                <td>Tue, 01 Apr 2025 17:32:59 -0000</td>
+                <td>26</td>
+                <td>Tue, 01 Apr 2025 17:40:08 -0000</td>
                 <td>Lead Dotnet Developer</td>
                 <td>Over 200 applicants</td>
                 <td>Remote</td>
@@ -427,8 +417,8 @@
                 </tr>
             
                 <tr>
-                <td>28</td>
-                <td>Tue, 01 Apr 2025 17:02:59 -0000</td>
+                <td>27</td>
+                <td>Tue, 01 Apr 2025 17:10:08 -0000</td>
                 <td>Lead .NET Developer</td>
                 <td>Over 200 applicants</td>
                 <td>Remote</td>
@@ -437,8 +427,8 @@
                 </tr>
             
                 <tr>
-                <td>29</td>
-                <td>Tue, 01 Apr 2025 16:02:59 -0000</td>
+                <td>28</td>
+                <td>Tue, 01 Apr 2025 16:10:08 -0000</td>
                 <td>Full Stack Engineer</td>
                 <td>Over 200 applicants</td>
                 <td>Remote</td>
@@ -447,8 +437,8 @@
                 </tr>
             
                 <tr>
-                <td>30</td>
-                <td>Tue, 01 Apr 2025 15:32:59 -0000</td>
+                <td>29</td>
+                <td>Tue, 01 Apr 2025 15:40:08 -0000</td>
                 <td>Dot Net Developer/React JS</td>
                 <td>Over 200 applicants</td>
                 <td>Remote</td>
@@ -457,8 +447,18 @@
                 </tr>
             
                 <tr>
+                <td>30</td>
+                <td>Tue, 01 Apr 2025 14:25:08 -0000</td>
+                <td>Full Stack Engineer</td>
+                <td>Over 200 applicants</td>
+                <td>Remote</td>
+                <td>Technogen, Inc. hiring Full Stack Engineer in Maryland, United States | LinkedIn</td>
+                <td><a href="https://www.linkedin.com/jobs/view/full-stack-engineer-at-technogen-inc-4195232898" target="_blank" onclick="this.style.color='gray'; this.innerText='Visited';">URL</a></td>
+                </tr>
+            
+                <tr>
                 <td>31</td>
-                <td>Tue, 01 Apr 2025 14:17:59 -0000</td>
+                <td>Tue, 01 Apr 2025 14:10:08 -0000</td>
                 <td>Senior Full Stack Engineer</td>
                 <td>Over 200 applicants</td>
                 <td>Remote</td>
@@ -468,17 +468,7 @@
             
                 <tr>
                 <td>32</td>
-                <td>Tue, 01 Apr 2025 14:02:59 -0000</td>
-                <td>Full Stack Engineer</td>
-                <td>Over 200 applicants</td>
-                <td>Remote</td>
-                <td>Technogen, Inc. hiring Full Stack Engineer in Maryland, United States | LinkedIn</td>
-                <td><a href="https://www.linkedin.com/jobs/view/full-stack-engineer-at-technogen-inc-4195232898" target="_blank" onclick="this.style.color='gray'; this.innerText='Visited';">URL</a></td>
-                </tr>
-            
-                <tr>
-                <td>33</td>
-                <td>Tue, 01 Apr 2025 13:17:59 -0000</td>
+                <td>Tue, 01 Apr 2025 13:40:08 -0000</td>
                 <td>Full Stack Developer</td>
                 <td>Over 200 applicants</td>
                 <td>Remote</td>
@@ -487,8 +477,8 @@
                 </tr>
             
                 <tr>
-                <td>34</td>
-                <td>Tue, 01 Apr 2025 09:32:59 -0000</td>
+                <td>33</td>
+                <td>Tue, 01 Apr 2025 10:25:08 -0000</td>
                 <td>Senior .NET Developer-W2 Only (USC and GC only)</td>
                 <td>Over 200 applicants</td>
                 <td>Remote</td>
@@ -497,8 +487,18 @@
                 </tr>
             
                 <tr>
+                <td>34</td>
+                <td>Tue, 01 Apr 2025 06:55:08 -0000</td>
+                <td>Senior Backend Developer</td>
+                <td>Over 200 applicants</td>
+                <td>Remote</td>
+                <td>ProScore Technologies hiring Senior Backend Developer in Greater Houston | LinkedIn</td>
+                <td><a href="https://www.linkedin.com/jobs/view/senior-backend-developer-at-proscore-technologies-4190515226" target="_blank" onclick="this.style.color='gray'; this.innerText='Visited';">URL</a></td>
+                </tr>
+            
+                <tr>
                 <td>35</td>
-                <td>Tue, 01 Apr 2025 19:50:38 -0000</td>
+                <td>Tue, 01 Apr 2025 20:11:27 -0000</td>
                 <td>Senior .Net Developer</td>
                 <td>Over 200 applicants</td>
                 <td>Remote</td>
@@ -508,57 +508,7 @@
             
                 <tr>
                 <td>36</td>
-                <td>Tue, 01 Apr 2025 19:35:38 -0000</td>
-                <td>Associate .NET Developer</td>
-                <td>Over 200 applicants</td>
-                <td>Remote</td>
-                <td>Atlantic BT hiring Associate .NET Developer in United States | LinkedIn</td>
-                <td><a href="https://www.linkedin.com/jobs/view/associate-net-developer-at-atlantic-bt-4194297660" target="_blank" onclick="this.style.color='gray'; this.innerText='Visited';">URL</a></td>
-                </tr>
-            
-                <tr>
-                <td>37</td>
-                <td>Tue, 01 Apr 2025 19:20:38 -0000</td>
-                <td>Dotnet Developer</td>
-                <td>Over 200 applicants</td>
-                <td>Remote</td>
-                <td>LTIMindtree hiring Dotnet Developer in New York, United States | LinkedIn</td>
-                <td><a href="https://www.linkedin.com/jobs/view/dotnet-developer-at-ltimindtree-4193961458" target="_blank" onclick="this.style.color='gray'; this.innerText='Visited';">URL</a></td>
-                </tr>
-            
-                <tr>
-                <td>38</td>
-                <td>Tue, 01 Apr 2025 18:50:38 -0000</td>
-                <td>Full-Stack .NET Developer</td>
-                <td>Over 200 applicants</td>
-                <td>Remote</td>
-                <td>TriCom Technical Services hiring Full-Stack .NET Developer in United States | LinkedIn</td>
-                <td><a href="https://www.linkedin.com/jobs/view/full-stack-net-developer-at-tricom-technical-services-4193258012" target="_blank" onclick="this.style.color='gray'; this.innerText='Visited';">URL</a></td>
-                </tr>
-            
-                <tr>
-                <td>39</td>
-                <td>Tue, 01 Apr 2025 18:20:38 -0000</td>
-                <td>Senior Dotnet Developer</td>
-                <td>Over 200 applicants</td>
-                <td>Remote</td>
-                <td>Cloudinity Inc hiring Senior Dotnet Developer in United States | LinkedIn</td>
-                <td><a href="https://www.linkedin.com/jobs/view/senior-dotnet-developer-at-cloudinity-inc-4195710321" target="_blank" onclick="this.style.color='gray'; this.innerText='Visited';">URL</a></td>
-                </tr>
-            
-                <tr>
-                <td>40</td>
-                <td>Tue, 01 Apr 2025 17:20:38 -0000</td>
-                <td>.NET Programmer</td>
-                <td>Over 200 applicants</td>
-                <td>Remote</td>
-                <td>Annuity Health, LLC hiring .NET Programmer in Westmont, IL | LinkedIn</td>
-                <td><a href="https://www.linkedin.com/jobs/view/net-programmer-at-annuity-health-llc-4197399584" target="_blank" onclick="this.style.color='gray'; this.innerText='Visited';">URL</a></td>
-                </tr>
-            
-                <tr>
-                <td>41</td>
-                <td>Tue, 01 Apr 2025 16:35:38 -0000</td>
+                <td>Tue, 01 Apr 2025 19:56:27 -0000</td>
                 <td>Senior Full Stack Software Engineer (C#/.NET)</td>
                 <td>Over 200 applicants</td>
                 <td>Remote</td>
@@ -567,8 +517,58 @@
                 </tr>
             
                 <tr>
+                <td>37</td>
+                <td>Tue, 01 Apr 2025 19:41:27 -0000</td>
+                <td>Associate .NET Developer</td>
+                <td>Over 200 applicants</td>
+                <td>Remote</td>
+                <td>Atlantic BT hiring Associate .NET Developer in United States | LinkedIn</td>
+                <td><a href="https://www.linkedin.com/jobs/view/associate-net-developer-at-atlantic-bt-4194297660" target="_blank" onclick="this.style.color='gray'; this.innerText='Visited';">URL</a></td>
+                </tr>
+            
+                <tr>
+                <td>38</td>
+                <td>Tue, 01 Apr 2025 19:26:27 -0000</td>
+                <td>Dotnet Developer</td>
+                <td>Over 200 applicants</td>
+                <td>Remote</td>
+                <td>LTIMindtree hiring Dotnet Developer in New York, United States | LinkedIn</td>
+                <td><a href="https://www.linkedin.com/jobs/view/dotnet-developer-at-ltimindtree-4193961458" target="_blank" onclick="this.style.color='gray'; this.innerText='Visited';">URL</a></td>
+                </tr>
+            
+                <tr>
+                <td>39</td>
+                <td>Tue, 01 Apr 2025 18:56:27 -0000</td>
+                <td>Full-Stack .NET Developer</td>
+                <td>Over 200 applicants</td>
+                <td>Remote</td>
+                <td>TriCom Technical Services hiring Full-Stack .NET Developer in United States | LinkedIn</td>
+                <td><a href="https://www.linkedin.com/jobs/view/full-stack-net-developer-at-tricom-technical-services-4193258012" target="_blank" onclick="this.style.color='gray'; this.innerText='Visited';">URL</a></td>
+                </tr>
+            
+                <tr>
+                <td>40</td>
+                <td>Tue, 01 Apr 2025 18:26:27 -0000</td>
+                <td>Senior Dotnet Developer</td>
+                <td>Over 200 applicants</td>
+                <td>Remote</td>
+                <td>Cloudinity Inc hiring Senior Dotnet Developer in United States | LinkedIn</td>
+                <td><a href="https://www.linkedin.com/jobs/view/senior-dotnet-developer-at-cloudinity-inc-4195710321" target="_blank" onclick="this.style.color='gray'; this.innerText='Visited';">URL</a></td>
+                </tr>
+            
+                <tr>
+                <td>41</td>
+                <td>Tue, 01 Apr 2025 17:41:27 -0000</td>
+                <td>Lead Microsoft .NET Developer (Remote Position)</td>
+                <td>Over 200 applicants</td>
+                <td>Remote</td>
+                <td>Ho2 Systems LLC hiring Lead Microsoft .NET Developer (Remote Position) in Austin, TX | LinkedIn</td>
+                <td><a href="https://www.linkedin.com/jobs/view/lead-microsoft-net-developer-remote-position-at-ho2-systems-llc-4195545948" target="_blank" onclick="this.style.color='gray'; this.innerText='Visited';">URL</a></td>
+                </tr>
+            
+                <tr>
                 <td>42</td>
-                <td>Tue, 01 Apr 2025 16:20:38 -0000</td>
+                <td>Tue, 01 Apr 2025 16:56:27 -0000</td>
                 <td>Need Senior .Net Application Programmer - STATE OF LOUISIANA</td>
                 <td>Over 200 applicants</td>
                 <td>Remote</td>
@@ -578,7 +578,7 @@
             
                 <tr>
                 <td>43</td>
-                <td>Tue, 01 Apr 2025 15:50:38 -0000</td>
+                <td>Tue, 01 Apr 2025 16:11:27 -0000</td>
                 <td>Senior Dotnet Developer (with Azure and Blazor experience)</td>
                 <td>Over 200 applicants</td>
                 <td>Remote</td>
@@ -588,17 +588,7 @@
             
                 <tr>
                 <td>44</td>
-                <td>Tue, 01 Apr 2025 14:50:38 -0000</td>
-                <td>Lead Microsoft .NET Developer (Remote Position)</td>
-                <td>Over 200 applicants</td>
-                <td>Remote</td>
-                <td>Ho2 Systems LLC hiring Lead Microsoft .NET Developer (Remote Position) in Austin, TX | LinkedIn</td>
-                <td><a href="https://www.linkedin.com/jobs/view/lead-microsoft-net-developer-remote-position-at-ho2-systems-llc-4195545948" target="_blank" onclick="this.style.color='gray'; this.innerText='Visited';">URL</a></td>
-                </tr>
-            
-                <tr>
-                <td>45</td>
-                <td>Tue, 01 Apr 2025 14:35:38 -0000</td>
+                <td>Tue, 01 Apr 2025 15:11:27 -0000</td>
                 <td>.NET Application Developer 100% Remote</td>
                 <td>Over 200 applicants</td>
                 <td>Remote</td>
@@ -607,8 +597,8 @@
                 </tr>
             
                 <tr>
-                <td>46</td>
-                <td>Tue, 01 Apr 2025 14:05:38 -0000</td>
+                <td>45</td>
+                <td>Tue, 01 Apr 2025 14:41:27 -0000</td>
                 <td>Full Stack .Net Developer</td>
                 <td>Over 200 applicants</td>
                 <td>Remote</td>
@@ -617,8 +607,8 @@
                 </tr>
             
                 <tr>
-                <td>47</td>
-                <td>Tue, 01 Apr 2025 12:20:38 -0000</td>
+                <td>46</td>
+                <td>Tue, 01 Apr 2025 12:26:27 -0000</td>
                 <td>Software Developer (C# .Net, Blazor, WPF, SSIS, Azure) - Only W2</td>
                 <td>Over 200 applicants</td>
                 <td>Remote</td>
@@ -627,8 +617,8 @@
                 </tr>
             
                 <tr>
-                <td>48</td>
-                <td>Tue, 01 Apr 2025 11:20:38 -0000</td>
+                <td>47</td>
+                <td>Tue, 01 Apr 2025 11:56:27 -0000</td>
                 <td>Dotnet Developer</td>
                 <td>Over 200 applicants</td>
                 <td>Remote</td>
@@ -637,8 +627,8 @@
                 </tr>
             
                 <tr>
-                <td>49</td>
-                <td>Tue, 01 Apr 2025 10:20:38 -0000</td>
+                <td>48</td>
+                <td>Tue, 01 Apr 2025 10:41:27 -0000</td>
                 <td>Principal Software Engineer (C#, .NET Core, React, Azure)</td>
                 <td>Over 200 applicants</td>
                 <td>Remote</td>
@@ -647,8 +637,8 @@
                 </tr>
             
                 <tr>
-                <td>50</td>
-                <td>Tue, 01 Apr 2025 09:50:38 -0000</td>
+                <td>49</td>
+                <td>Tue, 01 Apr 2025 09:56:27 -0000</td>
                 <td>Full-Stack Developer</td>
                 <td>Over 200 applicants</td>
                 <td>Remote</td>
@@ -657,8 +647,8 @@
                 </tr>
             
                 <tr>
-                <td>51</td>
-                <td>Tue, 01 Apr 2025 09:35:38 -0000</td>
+                <td>50</td>
+                <td>Tue, 01 Apr 2025 09:41:27 -0000</td>
                 <td>Full Stack Engineer</td>
                 <td>Over 200 applicants</td>
                 <td>Remote</td>
@@ -667,8 +657,8 @@
                 </tr>
             
                 <tr>
-                <td>52</td>
-                <td>Tue, 01 Apr 2025 09:05:38 -0000</td>
+                <td>51</td>
+                <td>Tue, 01 Apr 2025 09:11:27 -0000</td>
                 <td>Sr. Software Engineer (.NET, Angular)</td>
                 <td>Over 200 applicants</td>
                 <td>Remote</td>
@@ -677,8 +667,8 @@
                 </tr>
             
                 <tr>
-                <td>53</td>
-                <td>Tue, 01 Apr 2025 08:50:38 -0000</td>
+                <td>52</td>
+                <td>Tue, 01 Apr 2025 08:56:27 -0000</td>
                 <td>Software Engineer (.NET &amp; React)</td>
                 <td>Over 200 applicants</td>
                 <td>Remote</td>
@@ -687,8 +677,8 @@
                 </tr>
             
                 <tr>
-                <td>54</td>
-                <td>Tue, 01 Apr 2025 07:35:38 -0000</td>
+                <td>53</td>
+                <td>Tue, 01 Apr 2025 07:56:27 -0000</td>
                 <td>Senior Back End Dot Net Developer-6-12 Months Contract-Remote opportunity-Direct Customer</td>
                 <td>Over 200 applicants</td>
                 <td>Remote</td>
@@ -697,13 +687,23 @@
                 </tr>
             
                 <tr>
-                <td>55</td>
-                <td>Tue, 01 Apr 2025 07:05:38 -0000</td>
+                <td>54</td>
+                <td>Tue, 01 Apr 2025 07:26:27 -0000</td>
                 <td>Full Stack Engineer</td>
                 <td>Over 200 applicants</td>
                 <td>Remote</td>
                 <td>HCA Healthcare hiring Full Stack Engineer in United States | LinkedIn</td>
                 <td><a href="https://www.linkedin.com/jobs/view/full-stack-engineer-at-hca-healthcare-4190972721" target="_blank" onclick="this.style.color='gray'; this.innerText='Visited';">URL</a></td>
+                </tr>
+            
+                <tr>
+                <td>55</td>
+                <td>Tue, 01 Apr 2025 17:20:38 -0000</td>
+                <td>.NET Programmer</td>
+                <td>Over 200 applicants</td>
+                <td>Remote</td>
+                <td>Annuity Health, LLC hiring .NET Programmer in Westmont, IL | LinkedIn</td>
+                <td><a href="https://www.linkedin.com/jobs/view/net-programmer-at-annuity-health-llc-4197399584" target="_blank" onclick="this.style.color='gray'; this.innerText='Visited';">URL</a></td>
                 </tr>
             
             </table>
